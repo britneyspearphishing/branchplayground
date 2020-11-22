@@ -22,17 +22,21 @@ which are branched off of the ```develop``` branch.
 
 # Getting started
 ## What I have already done
-I have already created a ```develop``` branch
+I have already created a ```develop``` branch that you can use (A fork will contain all the branches in the main repo at the time you made the fork).
 ```
 git branch develop
-git push -u origin develop
+git push origin develop
 ```
-and also an example feature branch called ```feature/feature_no1``` - that I have used to add a "feature" to the source.md - which I merged back into the ```develop``` branch and then the ```develop``` into the ```main``` branch. 
+and also added an example feature branch called ```feature/feature_no1``` - that I have used to add a "feature" to the source.md - which I merged back into the ```develop``` branch and then I merged the ```develop``` into the ```main``` branch. 
 ## It's your turn
 **Step 0: Git**
 Make sure you have [**git**](https://git-scm.com/downloads) installed on your system.
-**Step 1: Forking**
-Fork the *branchplayground* repository. A fork is a copy of a repository that allows us to freely experiment with changes without affecting the original project.
+**Step 1: Forking and branch creation**
+Fork the *branchplayground* repository. A fork is a copy of a repository that allows us to freely experiment with changes without affecting the original project. Then create and push the develop branch
+```
+git branch develop
+git push origin develop
+```
 **Step 2: Cloning**
 Create a local clone of your fork
 ```
@@ -65,6 +69,6 @@ Go on GitHub Web and check if you can see your changes on the develop branch. Th
 ```
 git checkout main
 git merge develop
-git push main
+git push origin main
 ```
 Go on GitHub Web and check if you can see your changes on the develop branch
